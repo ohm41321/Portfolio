@@ -7,20 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav class="navbar" style="background-color: black;">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h3">1</span>
+    </div>
+  </nav>
     <div class="container">
                 <h1 class="name">Portfolio </h1>
-                <h1 class="name">Athit  Fongkhaimuk </h1>             
+                <h1 class="name">Athit  Fongkhaimuk </h1>          
                 <img class="logo" src="img/347591755_274071744966932_7583192107895744012_n.jpg" alt="">
-        <h5>Contact Me</h5>
+        <h5>contact me</h5>
         <div class="bt">
             <ul>
                 <li><a href="https://www.instagram.com/athitfkm/" target="_blank"><i class="fa tw fa-instagram"></i></a></li>
                 <li><a href="https://www.facebook.com/athit.ohm.9" target="_blank"><i class="fa tw fa-facebook"></i></a></li>
                 <li><a href="https://github.com/ohm41321" target="_blank"><i class="fa github fa-github"></i></a></li>
             </ul>
-               <h6>TEL : 0858127667 &nbsp; &nbsp; EMAIL : ohm.roexe1488@gmail.com</h6><br>
+               <h6>TEL : 085-8127667 &nbsp; &nbsp; EMAIL : ohm.roexe1488@gmail.com</h6><br>
         </div>
         <p class="bio">
             Hello guys, My name is Athit Fongkhaimuk. I am currently a student at Mae Jo University, majoring in Computer Science within the Faculty of Science. 
@@ -36,7 +43,8 @@
           <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
           <script>
             const ctx = document.getElementById('myChart');
-          
+            Chart.defaults.font.size = 18;
+            Chart.defaults.color = '#130B00';
             new Chart(ctx, {
               type: 'bar',
               data: {
@@ -44,7 +52,9 @@
                 datasets: [{
                   label: 'My Ability',
                   data: [9, 11.5, 7.5, 8.5, 7],
-                  backgroundColor: '#DCCCB2'
+                  backgroundColor: '#FF9933',
+                  borderWidth: 2 ,
+                  borderColor: '#130B00'
                 }]
               },
               options: {
@@ -58,7 +68,7 @@
           </script>  
     </div>
 <div class="footer">
-    Athit Fongkhaimuk &copy;
+  Athit Fongkhaimuk - Com-Sci - 6504101409 &copy;
     <script>
         document.write(new Date().getFullYear())
     </script>. All Rights Reserved
