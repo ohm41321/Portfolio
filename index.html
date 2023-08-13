@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+                <h1 class="name">Portfolio </h1>
+                <h1 class="name">Athit  Fongkhaimuk </h1>             
+                <img class="logo" src="D:\sorce\Portfolio\img\347591755_274071744966932_7583192107895744012_n.jpg" alt="">
+        <h5>Contact Me</h5>
+        <div class="bt">
+            <ul>
+                <li><a href="https://www.instagram.com/athitfkm/" target="_blank"><i class="fa tw fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/athit.ohm.9" target="_blank"><i class="fa tw fa-facebook"></i></a></li>
+                <li><a href="https://github.com/ohm41321" target="_blank"><i class="fa github fa-github"></i></a></li>
+            </ul>
+               <h6>TEL : 0858127667 &nbsp; &nbsp; EMAIL : ohm.roexe1488@gmail.com</h6><br>
+        </div>
+        <p class="bio">
+            Hello guys, My name is Athit Fongkhaimuk. I am currently a student at Mae Jo University, majoring in Computer Science within the Faculty of Science. 
+            As of the year 2023, I am studying in my second year. This year holds greater responsibility for me compared to the first year, 
+            and I am determined to be more focused on my studies. I believe that dedicating myself to learning will undoubtedly contribute to a bright 
+            and promising future for my career.
+        </p>
+        <hr>
+        <h5>My Ability Chart !!!</h5>
+        <div>
+        <canvas id="myChart"  width="400" height="150"></canvas>
+        </div>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script>
+            const ctx = document.getElementById('myChart');
+          
+            new Chart(ctx, {
+              type: 'bar',
+              data: {
+                labels: ['Analysis', 'Coding', 'Socialization', 'Speaking', 'Sports', ],
+                datasets: [{
+                  label: 'My Ability',
+                  data: [9, 11.5, 7.5, 8.5, 7],
+                  backgroundColor: '#DCCCB2'
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>  
+    </div>
+<div class="footer">
+    Athit Fongkhaimuk &copy;
+    <script>
+        document.write(new Date().getFullYear())
+    </script>. All Rights Reserved
+</div>
+<br>
+</body>
+</html>
