@@ -46,14 +46,22 @@
             Chart.defaults.font.size = 18;
             Chart.defaults.color = '#130B00';
             new Chart(ctx, {
-              type: 'line',
+              type: 'bar',
               data: {
                 labels: ['Analysis', 'Coding', 'Socialization', 'Speaking', 'Sports', ],
                 datasets: [{
-                  label: 'My Ability',
+                  label: 'My Ability', 
                   data: [9, 11.5, 7.5, 8.5, 7],
-                  backgroundColor: '#FF9933',
-                  borderWidth: 2 ,
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(255, 159, 64, 0.2)',
+                      'rgba(255, 205, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(201, 203, 207, 0.2)'
+                  ],
+                  borderWidth: 0 ,
                   borderColor: '#130B00'
                 }]
               },
